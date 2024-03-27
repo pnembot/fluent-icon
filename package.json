@@ -1,6 +1,6 @@
 {
   "name": "@pnembot/fluent-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React port of Microsoft's Fluent System Icons.",
   "main": "lib/index.js",
   "type": "module",
