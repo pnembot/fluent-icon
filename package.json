@@ -1,7 +1,7 @@
 {
   "name": "@pnembot/fluent-icon",
   "version": "1.0.0",
-  "description": "Microsoft fluent system icons for react",
+  "description": "A React port of Microsoft's Fluent System Icons.",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc"
@@ -9,9 +9,20 @@
   "exports": {
     "./*": "./lib/*.js"
   },
-  "keywords": [],
+  "keywords": [
+    "fluent",
+    "icons",
+    "react",
+    "fluent-icons",
+    "design"
+  ],
   "author": "pnembot",
   "license": "MIT",
+  "homepage": "https://github.com/pnembot/fluent-icon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnembot/fluent-icon.git"
+  },
   "devDependencies": {
     "@types/react": "^18.2.67",
     "typescript": "^5.4.3"

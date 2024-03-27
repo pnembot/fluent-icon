@@ -1,2 +1,2 @@
 # fluent-icon
-microsoft fluent icons
+A React port of Microsoft's Fluent System Icons.
