@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A React port of Microsoft's Fluent System Icons.",
   "main": "lib/index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc"
   },
@@ -29,5 +30,12 @@
   },
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "types": "./lib/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/pnembot/fluent-icon/issues"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
