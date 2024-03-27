@@ -1,13 +1,14 @@
-import React, { SVGProps } from "react";
+import type { SVGProps } from "react";
 
-export function ChatMailFilled(props: SVGProps<SVGSVGElement>) {
+export function ChatMailFilled(props: Omit<SVGProps<SVGSVGElement>, 'viewBox'|'xmlns'>) {
+  const {width = "1em", height="1em", ...rest} = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width={width}
+      height={height}
       viewBox="0 0 20 20"
-      {...props}
+      {...rest}
     >
       <g fill="currentColor">
         <path d="M2 7a6 6 0 1 1 2.996 5.195l-2.338.78a.5.5 0 0 1-.639-.612l.712-2.491A5.975 5.975 0 0 1 2 7Zm4.5-1.5a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3Zm2 2h-2a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1Z" />

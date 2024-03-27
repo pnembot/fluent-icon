@@ -1,13 +1,14 @@
-import React, { SVGProps } from "react";
+import type { SVGProps } from "react";
 
-export function ClipboardTextRtl(props: SVGProps<SVGSVGElement>) {
+export function ClipboardTextRtl(props: Omit<SVGProps<SVGSVGElement>, 'viewBox'|'xmlns'>) {
+  const {width = "1em", height="1em", ...rest} = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width={width}
+      height={height}
       viewBox="0 0 20 20"
-      {...props}
+      {...rest}
     >
       <g fill="currentColor">
         <path d="M6 8.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm4.5 2.5a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3Zm-2 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5Z" />

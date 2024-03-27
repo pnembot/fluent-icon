@@ -1,13 +1,14 @@
-import React, { SVGProps } from "react";
+import type { SVGProps } from "react";
 
-export function WarningShield(props: SVGProps<SVGSVGElement>) {
+export function WarningShield(props: Omit<SVGProps<SVGSVGElement>, 'viewBox'|'xmlns'>) {
+  const {width = "1em", height="1em", ...rest} = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width={width}
+      height={height}
       viewBox="0 0 20 20"
-      {...props}
+      {...rest}
     >
       <g fill="currentColor">
         <path d="M10.315 1.852a1.5 1.5 0 0 0-2.629 0L1.127 13.777A1.5 1.5 0 0 0 2.442 16h7.934a6.705 6.705 0 0 1-.257-1H2.442a.5.5 0 0 1-.439-.74l6.56-11.926a.5.5 0 0 1 .875 0l3.735 6.79a4.72 4.72 0 0 0 .782-.652l-3.64-6.62Z" />

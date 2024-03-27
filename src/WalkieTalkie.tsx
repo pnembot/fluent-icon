@@ -1,13 +1,14 @@
-import React, { SVGProps } from "react";
+import type { SVGProps } from "react";
 
-export function WalkieTalkie(props: SVGProps<SVGSVGElement>) {
+export function WalkieTalkie(props: Omit<SVGProps<SVGSVGElement>, 'viewBox'|'xmlns'>) {
+  const {width = "1em", height="1em", ...rest} = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width={width}
+      height={height}
       viewBox="0 0 20 20"
-      {...props}
+      {...rest}
     >
       <g fill="currentColor">
         <path d="M7.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-5ZM8 9V7h4v2H8Zm0 3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z" />

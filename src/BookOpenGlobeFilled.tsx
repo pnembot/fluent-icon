@@ -1,13 +1,14 @@
-import React, { SVGProps } from "react";
+import type { SVGProps } from "react";
 
-export function BookOpenGlobeFilled(props: SVGProps<SVGSVGElement>) {
+export function BookOpenGlobeFilled(props: Omit<SVGProps<SVGSVGElement>, 'viewBox'|'xmlns'>) {
+  const {width = "1em", height="1em", ...rest} = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width={width}
+      height={height}
       viewBox="0 0 20 20"
-      {...props}
+      {...rest}
     >
       <g fill="currentColor">
         <path d="M18 4.75v5.507a5.495 5.495 0 0 0-1.5-.882V4.75a.25.25 0 0 0-.25-.25H12c-.69 0-1.25.56-1.25 1.25v4.727a5.502 5.502 0 0 0-1.5 2.379V5.75c0-.69-.56-1.25-1.25-1.25H3.75a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25H8c.421 0 .794-.208 1.02-.527c.049.574.186 1.123.398 1.634c-.414.25-.9.393-1.418.393H3.75A1.75 1.75 0 0 1 2 15.25V4.75C2 3.784 2.784 3 3.75 3H8c.788 0 1.499.331 2 .863A2.742 2.742 0 0 1 12 3h4.25c.966 0 1.75.784 1.75 1.75Z" />
