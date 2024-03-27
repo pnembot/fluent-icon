@@ -1,14 +1,17 @@
 {
-  "name": "fluent-icon",
+  "name": "@pnembot/fluent-icon",
   "version": "1.0.0",
-  "description": "microsoft fluent icons",
-  "main": "index.js",
+  "description": "Microsoft fluent system icons for react",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
+  },
+  "exports": {
+    "./*": "./lib/*.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "pnembot",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.67",
     "typescript": "^5.4.3"

@@ -5,3 +5,5 @@ tsconfig.json
 .npmignore
 **/*.html
 dist
+scripts
+demo
